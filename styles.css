@@ -1,5 +1,6 @@
 body {
-    background-color: #e6e6e6;
+    /*background-color: #e6e6e6;*/
+    background-image: url(images/background.png);
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -11,7 +12,8 @@ nav {
     position: relative;
     margin: auto;
     display: block;
-    background-color: #808080;
+    background-color: transparent;
+    border-bottom-style: solid;
     padding: 10px;
     overflow: hidden;
 }
