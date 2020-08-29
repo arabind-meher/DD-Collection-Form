@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Collection Form</title>
+    <style>
+        .collapsible {
+            background-color: #e6e6e6;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            border-bottom-style: solid;
+            text-align: left;
+            outline: none;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #cccccc;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: black;
+            font-weight: bold;
+            float: right;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #e6e6e6;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <b>Home</b>
+        </a>
+        |
+        <a href="what.html">
+            <b><u>What</u></b>
+        </a>
+        |
+        <a href="how.html">
+            <b>How</b>
+        </a>
+        |
+        <a href="add.html">
+            <b>Add</b>
+        </a>
+        |
+        <a href="view.html">
+            <b>View</b>
+        </a>
+        |
+        <a href="about_us.html">
+            <b>About Us</b>
+        </a>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="login.html">
+            <b>Login</b>
+        </a>
+        |
+        <a href="register.html">
+            <b>Register</b>
+        </a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div style="margin-left: 5%; margin-right: 5%;">
+        <button class="collapsible">What is Demand Draft</button>
+        <div class="content">
+            <p>
+                A demand draft is a negotiable instrument similar to a bill of exchange. A bank issues a demand draft to
+                a client (drawer), directing another bank (drawee) or one of its own branches to pay a certain sum to
+                the specified party (payee). A demand draft can also be compared to a cheque. However, demand drafts are
+                difficult to countermand. Demand drafts can only be made payable to a specified party, also known as pay
+                to order. But, cheques can also be made payable to the bearer. Demand drafts are orders of payment by a
+                bank to another bank, whereas cheques are orders of payment from an account holder to the bank.
+            </p>
+        </div>
+        <br>
+        <br>
+        <button class="collapsible">Definitions and Regulations by Region</button>
+        <div class="content">
+            <p>
+                Demand drafts are also known as sight drafts, as they are payable when presented by sight to the bank.
+                Under UCC 3-104, a draft has been defined as a negotiable instrument in the form of an order. The person
+                making the order is known as the drawer and the person specified in the order is called the drawee, as
+                defined in the UCC 3-103. The party who creates the draft is called the maker, and the party who is
+                ordered to pay is called the drawee. In US, remotely created cheques are also called demand drafts.
+                Remotely created cheques are orders of payment created by the payee and authorized by the customer
+                remotely, using a telephone or the internet by providing the required information including the MICR
+                code from a valid cheque. They do not bear the signatures of the customers like ordinary cheques.
+                Instead, they bear a legend statement "Authorized by Drawer". This type of instrument is usually used by
+                credit card companies, utility companies, or telemarketers. Remotely created cheques are susceptible to
+                fraud.
+            </p>
+        </div>
+        <br>
+        <br>
+        <button class="collapsible">Understanding Demand Drafts</button>
+        <div class="content">
+            <p>
+                When a bank prepares a demand draft, the amount of the draft is taken from the account of the customer
+                requesting the draft and is transferred to an account at another bank. The drawer is the person
+                requesting the demand draft; the bank paying the money is the drawee; the party receiving the money is
+                the payee. Demand drafts were originally designed to benefit legitimate telemarketers who needed to
+                withdraw funds from customer checking accounts using their bank account numbers and bank routing
+                numbers. For example, if a small business owner purchases products from another company on credit, the
+                small business owner asks his bank to send a demand draft to the company for payment of the products,
+                making him the drawer. The bank issues the draft, making it the drawee. After the draft matures, the
+                owner of the other company brings the demand draft to his bank and collects his payment, making him the
+                payee.
+            </p>
+        </div>
+        <br>
+        <br>
+        <button class="collapsible">Why are Demand Drafts popular?</button>
+        <div class="content">
+            <p>
+                Demand drafts are popular because they can only be paid to the drawee. In addition to this, the fact
+                that the instrument can be prepared from any bank irrespective of having a bank account with them comes
+                in handy. While the instrument is prepared normally in Indian currency, the draft can be prepared in
+                foreign currency as well. As there is no risk of non-clearance of a demand draft, it is a preferable
+                option of sending payments abroad.
+            </p>
+        </div>
+        <br>
+        <br>
+        <button class="collapsible">Demand Drafts Versus Checks</button>
+        <div class="content">
+            <p>
+                A demand draft is issued by a bank while a check is issued by an individual. Also, a demand draft is
+                drawn by an employee of a bank while a check is drawn by a customer of a bank. Payment of a demand draft
+                may not be stopped by the drawer as it may with a check. Although a check can be hand-delivered, this is
+                not the case with a demand draft. The draft may be drawn regardless of whether an individual holds an
+                account at the bank while a check may be written only by an account holder.
+            </p>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Collection Form</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mySlides {display: none;}
+
+        img {
+            height: 480px;
+            width: 1080px;
+            border: 1px solid black;
+        }
+
+        button {
+            align-content: center;
+            height: 144px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <b><u>Home</u></b>
+        </a>
+        |
+        <a href="what.html">
+            <b>What</b>
+        </a>
+        |
+        <a href="how.html">
+            <b>How</b>
+        </a>
+        |
+        <a href="add.html">
+            <b>Add</b>
+        </a>
+        |
+        <a href="view.html">
+            <b>View</b>
+        </a>
+        |
+        <a href="about_us.html">
+            <b>About Us</b>
+        </a>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="login.html">
+            <b>Login</b>
+        </a>
+        |
+        <a href="register.html">
+            <b>Register</b>
+        </a>
+    </nav>
+
+    <br>
+    <h1>Demand Draft Collection Form</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="center">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <img class="mySlides" src="images/demand_draft_01.jpg">
+        <img class="mySlides" src="images/demand_draft_02.jpg">
+        <img class="mySlides" src="images/demand_draft_03.jpg">
+        <img class="mySlides" src="images/demand_draft_04.jpg">
+        <img class="mySlides" src="images/demand_draft_05.jpg">
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

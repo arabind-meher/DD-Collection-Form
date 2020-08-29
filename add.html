@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Collection Form</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        * {box-sizing: border-box;}
+
+        input[type=date],
+        select,
+        textarea {
+            width: max-content;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            float: right;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            border-color: #666666;
+            padding: 20px;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <b>Home</b>
+        </a>
+        |
+        <a href="what.html">
+            <b>What</b>
+        </a>
+        |
+        <a href="how.html">
+            <b>How</b>
+        </a>
+        |
+        <a href="add.html">
+            <b><u>Add</u></b>
+        </a>
+        |
+        <a href="view.html">
+            <b>View</b>
+        </a>
+        |
+        <a href="about_us.html">
+            <b>About Us</b>
+        </a>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="login.html">
+            <b>Login</b>
+        </a>
+        |
+        <a href="register.html">
+            <b>Register</b>
+        </a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <form>
+            <input type="date" id="date" placeholder="Date">
+            <input type="text" id="dd_number" placeholder="DD Number">
+            <input type="text" id="from" placeholder="From">
+            <input type="text" id="to" placeholder="To">
+            <input type="text" id="number" placeholder="Amount (Number)">
+            <input type="text" id="word" placeholder="Amount (Word)">
+            <input type="text" id="bank" placeholder="Bank Name">
+            <input type="text" id="branch" placeholder="Branch Name">
+            <textarea id="purpose" placeholder="Purpose" style="height:100px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
