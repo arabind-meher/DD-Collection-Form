@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="about_us.css"?>
+
+<_author>
+    <heading>About Us</heading>
+    <author>
+        <name>Arabind Meher</name>
+        <regno>RA1711003011365</regno>
+        <phone>7871972862</phone>
+        <email>ag3774@srmist.edu.in</email>
+    </author>
+
+    <author>
+        <name>Kishan Kumar</name>
+        <regno>RA1711003010544</regno>
+        <phone>7871972862</phone>
+        <email>kr3797@srmist.edu.in</email>
+    </author>
+
+    <author>
+        <name>Rahul Chandokar</name>
+        <regno>RA1711003010596</regno>
+        <phone>7871972862</phone>
+        <email>rs5624@srmist.edu.in</email>
+    </author>
+</_author>

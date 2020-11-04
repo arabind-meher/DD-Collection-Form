@@ -1,0 +1,33 @@
+_author {
+     background-image: url(images/background.png);
+     margin: auto;
+     text-align: center;
+     display: table-cell;
+     vertical-align: middle;
+     padding-top: 20px;
+}
+
+author {
+     color: black;
+     font-size: 18px;
+     text-align: center;
+     padding: 10px;
+}
+
+heading {
+     color: black;
+     font-size: 40px;
+     text-align: center;
+     padding-top: 25px;
+     padding-bottom: 100px;
+}
+
+heading, name, regno, phone, email {
+     display: block;
+}
+
+name {
+     text-align: center;
+     font-size: 25px;
+     font-weight: bold;
+}

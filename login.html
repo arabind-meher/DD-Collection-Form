@@ -15,6 +15,12 @@
             box-sizing: border-box;
         }
 
+        p, a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 15px;
+        }
+
         input[type=text],
         select,
         textarea {
@@ -67,58 +73,28 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">
-            <b>Home</b>
-        </a>
-        |
-        <a href="what.html">
-            <b>What</b>
-        </a>
-        |
-        <a href="how.html">
-            <b>How</b>
-        </a>
-        |
-        <a href="add.html">
-            <b>Add</b>
-        </a>
-        |
-        <a href="view.html">
-            <b>View</b>
-        </a>
-        |
-        <a href="about_us.html">
-            <b>About Us</b>
-        </a>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="login.html">
-            <b><u>Login</u></b>
-        </a>
-        |
-        <a href="register.html">
-            <b>Register</b>
-        </a>
-    </nav>
 
     <br>
     <br>
+
+    <h1>Demand Draft Collection Form</h1>
+
     <br>
     <br>
     <br>
 
     <div class="container">
-        <form id="login">
+        <form action="login.php" method="POST" id="login">
             <h3>Login</h3>
-            <input type="text" id="login_id" placeholder="Login ID">
-            <input type="password" id="login_password" placeholder="Password">
-            <p id="login_validation"></p>
+            <input type="text" id="username" placeholder="User Name">
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <br>
             <input type="submit" onclick="loginButtonClicked()" value="Login">
+            <br>
+            <p>
+                Don't have an account: <a href="register.html">Register Now</a>
+            </p>
         </form>
     </div>
 

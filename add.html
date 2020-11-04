@@ -64,7 +64,7 @@
 
 <body>
     <nav>
-        <a href="index.html">
+        <a href="home.html">
             <b>Home</b>
         </a>
         |
@@ -92,28 +92,26 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <a href="login.html">
-            <b>Login</b>
-        </a>
-        |
-        <a href="register.html">
-            <b>Register</b>
+            <b>Logout</b>
         </a>
     </nav>
     <br>
     <br>
     <br>
     <div class="container">
-        <form>
+        <form action="add.php" method="POST">
             <input type="date" id="date" placeholder="Date">
             <input type="text" id="dd_number" placeholder="DD Number">
-            <input type="text" id="from" placeholder="From">
-            <input type="text" id="to" placeholder="To">
-            <input type="text" id="number" placeholder="Amount (Number)">
-            <input type="text" id="word" placeholder="Amount (Word)">
-            <input type="text" id="bank" placeholder="Bank Name">
-            <input type="text" id="branch" placeholder="Branch Name">
+            <input type="text" id="user_from" placeholder="From">
+            <input type="text" id="user_to" placeholder="To">
+            <input type="text" id="amount_n" placeholder="Amount (Number)">
+            <input type="text" id="amount_w" placeholder="Amount (Word)">
+            <input type="text" id="bank_name" placeholder="Bank Name">
+            <input type="text" id="branch_name" placeholder="Branch Name">
             <textarea id="purpose" placeholder="Purpose" style="height:100px"></textarea>
             <input type="submit" value="Submit">
         </form>

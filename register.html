@@ -15,6 +15,13 @@
             box-sizing: border-box;
         }
 
+        p,
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 15px;
+        }
+
         input[type=text],
         select,
         textarea {
@@ -102,60 +109,30 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">
-            <b>Home</b>
-        </a>
-        |
-        <a href="what.html">
-            <b>What</b>
-        </a>
-        |
-        <a href="how.html">
-            <b>How</b>
-        </a>
-        |
-        <a href="add.html">
-            <b>Add</b>
-        </a>
-        |
-        <a href="view.html">
-            <b>View</b>
-        </a>
-        |
-        <a href="about_us.html">
-            <b>About Us</b>
-        </a>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="login.html">
-            <b>Login</b>
-        </a>
-        |
-        <a href="register.html">
-            <b><u>Register</u></b>
-        </a>
-    </nav>
 
     <br>
     <br>
+
+    <h1>Demand Draft Collection Form</h1>
+
     <br>
     <br>
     <br>
 
     <div class="container">
-        <form action="/action_page.php">
+        <form action="register.php" method="post">
             <h3>Register</h3>
-            <input type="text" id="usrname" name="usrname" required placeholder="Register ID">
-            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            <input type="text" id="username" name="username" required placeholder="User Name">
+            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 required placeholder="Enter Password">
-            <input type="password" id="token" required placeholder="Token">
+            <br>
+            <br>
             <input type="submit" value="Register">
+            <br>
+            <p>
+                Already have an account: <a href="login.html">Login here</a>
+            </p>
         </form>
     </div>
     <div id="message">
@@ -167,7 +144,7 @@
     </div>
 
     <script>
-        var myInput = document.getElementById("psw");
+        var myInput = document.getElementById("password");
         var letter = document.getElementById("letter");
         var capital = document.getElementById("capital");
         var number = document.getElementById("number");
